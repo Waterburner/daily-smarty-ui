@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 export default class App extends Component {
-  render() {
-    return (
-      <div className='app'>
-        Logo
-      </div>
-    );
-  }
+    render() {
+        return (
+            <div className="app">
+                <div className="logo">Logo</div>
+            </div>
+        );
+    }
 }
