@@ -2,13 +2,18 @@ html {
     font-size: 62.5%; // 1rem is 10px
 }
 
+// dev testing =====================
+html * {
+    transition: 0.3s;
+}
+// end of dev testing =====================
 *,
 *::after,
 *::before {
     margin: 0;
     padding: 0;
     box-sizing: inherit;
-    font-family: 'montserrat';
+    font-family: "montserrat";
 }
 
 body {
@@ -25,4 +30,14 @@ body {
     margin-top: 2rem;
     display: grid;
     justify-items: center;
+}
+
+.container {
+    display: grid;
+    align-content: space-around;
+    justify-items: center;
+
+    height: 350px;
+    width: 100%;
+    background-color: skyblue;
 }
