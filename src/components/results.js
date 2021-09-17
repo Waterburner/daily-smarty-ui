@@ -2,9 +2,12 @@ import React, { Component } from "react";
 import Logo from "./logo";
 import SearchBar from "./searchbar";
 
-export default class Results extends Component {
+import { connect } from "react-redux";
+import * as actions from "../actions";
+
+class Results extends Component {
     handleSearchBarSubmit(query) {
-        console.log("It's working! You searched for \"" + query.query + '"');
+        this.props.fetchPostsWithQuery(query);
     }
     render() {
         return (
@@ -18,3 +21,5 @@ export default class Results extends Component {
         );
     }
 }
+
+export default connect(null, actions)(Results);
