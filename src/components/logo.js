@@ -3,6 +3,8 @@ import React, { Component } from "react";
 
 import logoImg from "../../static/assets/logo/ds_circle_logo1.png";
 
+import { Link } from "react-router-dom";
+
 export default class Logo extends Component {
     render() {
         const size = {
@@ -12,7 +14,9 @@ export default class Logo extends Component {
 
         return (
             <div className="logo-main">
-                <img src={logoImg} alt="logo img" style={size} />
+                <Link to="/">
+                    <img src={logoImg} alt="logo img" style={size} />
+                </Link>
             </div>
         );
     }
