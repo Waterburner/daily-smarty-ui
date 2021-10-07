@@ -1,47 +1,11 @@
-// html {
-//     font-size: 62.5%; // 1rem is 10px
-// }
-
-// dev testing =====================
-html * {
-    transition: 0.3s;
-}
-// end of dev testing =====================
-*,
-*::after,
-*::before {
-    margin: 0;
-    // padding: 0;
-    box-sizing: inherit;
-    font-family: "montserrat";
-}
-
-body {
-    overflow-x: hidden;
-    font-weight: normal;
-
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-rendering: optimizeLegibility;
-    -webkit-tap-highlight-color: transparent;
-}
-
-.app {
-    margin-top: 2rem;
-    display: grid;
-    justify-items: center;
-}
-
-.container {
-    display: grid;
-    align-content: space-around;
-    justify-items: center;
-
-    height: 350px;
-    width: 100%;
-    background-color: skyblue;
-}
-
 .post-topic {
     margin: 0 4px;
 }
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+// .home {
+
+// }

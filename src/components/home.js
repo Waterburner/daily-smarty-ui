@@ -16,14 +16,10 @@ class Home extends Component {
 
     render() {
         return (
-            <div className="app">
-                <div>
-                    <Logo />
-                    <SearchBar
-                        onSubmit={(query) => this.handleFormSubmit(query)}
-                    />
-                    <RecentPosts />
-                </div>
+            <div className="home">
+                <Logo />
+                <SearchBar onSubmit={(query) => this.handleFormSubmit(query)} />
+                <RecentPosts />
             </div>
         );
     }
