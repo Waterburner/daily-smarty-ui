@@ -1,3 +1,6 @@
+$color-gray-one: #666666;
+$color-gray-two: #b3b3b3;
+
 .post-topic {
     margin: 0 4px;
 }
@@ -18,3 +21,5 @@ body {
     align-content: space-around;
     justify-items: center;
 }
+
+@import "./searchBar.scss";
