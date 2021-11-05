@@ -10,6 +10,9 @@ import * as actions from "../actions";
 class Results extends Component {
     handleSearchBarSubmit(query) {
         this.props.fetchPostsWithQuery(query);
+        console.log(
+            "results.js handleSearchBarSubmit after fetchPostsWithQuery(query)"
+        );
     }
 
     render() {
@@ -20,6 +23,7 @@ class Results extends Component {
                     page="results"
                     onSubmit={(query) => this.handleSearchBarSubmit(query)}
                 />
+                testing results.js component
                 <ResultsPosts />
             </div>
         );
